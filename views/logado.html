@@ -1,0 +1,39 @@
+<style>
+    *{
+        font-family: Tahoma,Verdana,Segoe,sans-serif; 
+        font-size: 20px;
+        font-weight: 200;
+        font-style: bold;
+        color: rgb(186, 186, 186);
+        background: #212121;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    input[type=text] [type=email] {
+        background-color: #515151;
+        border: none;
+        margin-bottom: 40px;
+        height: 14px;
+    }
+    
+</style>
+
+<h1>Email</h1>
+<form action="/enviarEmail" method="post">
+    <input style="height: 50px; background-color: #515151;
+    border: none;" type="email" name="email" value="Email" />
+    <br>
+
+    <textarea style="height: 40%; width: 80%; margin-top: 40px; background-color: #515151;
+    border: none; margin-bottom: 40px;" name="mensagem" rows="14" cols="10" wrap="soft"> </textarea>
+    <br>
+    <input type="submit" value="Enviar" />
+</form>
+<form action="/Logout" method="get">
+    <input type="submit" value="Logout" />
+</form>

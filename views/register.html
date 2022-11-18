@@ -1,0 +1,35 @@
+<style>
+    *{
+        font-family: Tahoma,Verdana,Segoe,sans-serif; 
+        font-size: 20px;
+        font-weight: 200;
+        font-style: bold;
+        color: rgb(186, 186, 186);
+        background: #212121;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    input[type=text] [type=password] {
+        background-color: #515151;
+        border: none;
+        margin-bottom: 40px;
+        height: 14px;
+    }
+    
+</style>
+
+
+<h1>Register</h1>
+<form action = "/register"method="post">
+    <input type="text" name="login">
+    <input type="password" name="password">
+    <input type="submit" name="enter" value="Register" />
+</form>
+<form action="/" method="get">
+    <input type="submit" value="Login" />
+</form>
